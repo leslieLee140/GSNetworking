@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D77E8AB01B640A1D8F37832F7698601 /* SAMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = E175ABDDD1BDE5E5D89015B83CCFCADF /* SAMKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E346996CA107422A3F6E06493D3BACC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */; };
+		6717611C9AB46C1C682B8A4E2E321280 /* SAMKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0585DD48F3755870943172B2C2B3B757 /* SAMKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B6E5B2870E44EE479483925621946E5 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C36AAB7793F6B45CA8403B7ED22070 /* SAMKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6E808DEA1A50D9FFA2114215EC4C0D03 /* SAMKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = C251658AFEF762A32263F00EEB0C2484 /* SAMKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BFA122FDC1E2FA71AA6CDED4C3B757 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		8F5A7204ED8F7C84625AE64325FCF204 /* SAMKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A35F18837CF1D720C757915E3B70C6D5 /* SAMKeychain-dummy.m */; };
+		AFC2FE78B7F0A8E1A44C109C05CF20B6 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 62535300867D548D913DAD850AFD0759 /* SAMKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EF653F096566E34B34B04DE559D1E2B2 /* SAMKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA637B3D2D0A60BDBC6D25ECEA00AAF1 /* SAMKeychain.bundle */; };
+		EFE098C364F12F2ED33A88D499D84B1A /* Pods-GSNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92304FB88ED00D313982EF00B334ABF1 /* Pods-GSNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F324780B70170328531897D63F6DA54E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		F8B524806835701E8F404B7B4D4DAC39 /* Pods-GSNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A767F11227DF38C587B16F336E9D8D /* Pods-GSNetworking-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A428453CF44FC3349FC6506B5CC8B5DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5572D14DECB5A676C1B31B30A3BA7F10;
+			remoteInfo = SAMKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0585DD48F3755870943172B2C2B3B757 /* SAMKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-umbrella.h"; sourceTree = "<group>"; };
+		278518DFAA0BA9CD80497362DB06278B /* Pods-GSNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		4766E50E6D343E96EF57EF833D774613 /* SAMKeychain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMKeychain.release.xcconfig; sourceTree = "<group>"; };
+		49CFED21CC8D054BCE4D7995281010A0 /* Pods-GSNetworking-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSNetworking-frameworks.sh"; sourceTree = "<group>"; };
+		612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMKeychain; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62535300867D548D913DAD850AFD0759 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychainQuery.m; path = Sources/SAMKeychainQuery.m; sourceTree = "<group>"; };
+		635D7D3D52E0D3C3099BBE8822F1958A /* Pods-GSNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		67C36AAB7793F6B45CA8403B7ED22070 /* SAMKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychain.m; path = Sources/SAMKeychain.m; sourceTree = "<group>"; };
+		6E91CB5BBB57861ADAF6850064850E02 /* Pods-GSNetworking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSNetworking-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72F58C574CABE30AB906E4D2D2C40A05 /* SAMKeychain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMKeychain.debug.xcconfig; sourceTree = "<group>"; };
+		85B6AB46D5D0691113469C7550F8181E /* Pods-GSNetworking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSNetworking-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EA21D7AAC0C6A3173C2189FA99623CE /* Pods-GSNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSNetworking-Info.plist"; sourceTree = "<group>"; };
+		92304FB88ED00D313982EF00B334ABF1 /* Pods-GSNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSNetworking-umbrella.h"; sourceTree = "<group>"; };
+		952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		997A33D93E1687E666A407FE95B15B15 /* SAMKeychain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SAMKeychain-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A35F18837CF1D720C757915E3B70C6D5 /* SAMKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAMKeychain-dummy.m"; sourceTree = "<group>"; };
+		AFE0E64D44CE993FAAEE63F7B2CC94C0 /* Pods-GSNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GSNetworking.modulemap"; sourceTree = "<group>"; };
+		BA637B3D2D0A60BDBC6D25ECEA00AAF1 /* SAMKeychain.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SAMKeychain.bundle; path = Support/SAMKeychain.bundle; sourceTree = "<group>"; };
+		BD45FC5478E0A33971B55C1C5F492319 /* SAMKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SAMKeychain.modulemap; sourceTree = "<group>"; };
+		BE12F4B3E22BA80D26A9CD312386D542 /* SAMKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-prefix.pch"; sourceTree = "<group>"; };
+		C251658AFEF762A32263F00EEB0C2484 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychainQuery.h; path = Sources/SAMKeychainQuery.h; sourceTree = "<group>"; };
+		C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CCB29E5ECD970BC772567ECEE315C27B /* Pods-GSNetworking */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GSNetworking"; path = Pods_GSNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A767F11227DF38C587B16F336E9D8D /* Pods-GSNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSNetworking-dummy.m"; sourceTree = "<group>"; };
+		E175ABDDD1BDE5E5D89015B83CCFCADF /* SAMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychain.h; path = Sources/SAMKeychain.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CCAA880B5078D161A9D56466ADDB237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BFA122FDC1E2FA71AA6CDED4C3B757 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B11CD2AC1DFAC52966DAB3A67C8E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F324780B70170328531897D63F6DA54E /* Foundation.framework in Frameworks */,
+				5E346996CA107422A3F6E06493D3BACC /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0C2151BA0DB25426E07F5166CED338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCB29E5ECD970BC772567ECEE315C27B /* Pods-GSNetworking */,
+				612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CE426AC267333500FABE7BA0A5A42A0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E6A688425A5DD7F5C698AE24CE4BF96 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D572235D210267F13C585372A3A793E1 /* Pods-GSNetworking */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3C4DBC08AB87A716DF40C19A80BA7E95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EF60D9F294D592E800C1E3A8E7341DA /* SAMKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53EA62B259022C2F9EC3DDBF83B855FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA637B3D2D0A60BDBC6D25ECEA00AAF1 /* SAMKeychain.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7CE426AC267333500FABE7BA0A5A42A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */,
+				C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9EF60D9F294D592E800C1E3A8E7341DA /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				E175ABDDD1BDE5E5D89015B83CCFCADF /* SAMKeychain.h */,
+				67C36AAB7793F6B45CA8403B7ED22070 /* SAMKeychain.m */,
+				C251658AFEF762A32263F00EEB0C2484 /* SAMKeychainQuery.h */,
+				62535300867D548D913DAD850AFD0759 /* SAMKeychainQuery.m */,
+				53EA62B259022C2F9EC3DDBF83B855FF /* Resources */,
+				A94DE5377DE232BBC61AE0B5932D1980 /* Support Files */,
+			);
+			name = SAMKeychain;
+			path = SAMKeychain;
+			sourceTree = "<group>";
+		};
+		A94DE5377DE232BBC61AE0B5932D1980 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD45FC5478E0A33971B55C1C5F492319 /* SAMKeychain.modulemap */,
+				A35F18837CF1D720C757915E3B70C6D5 /* SAMKeychain-dummy.m */,
+				997A33D93E1687E666A407FE95B15B15 /* SAMKeychain-Info.plist */,
+				BE12F4B3E22BA80D26A9CD312386D542 /* SAMKeychain-prefix.pch */,
+				0585DD48F3755870943172B2C2B3B757 /* SAMKeychain-umbrella.h */,
+				72F58C574CABE30AB906E4D2D2C40A05 /* SAMKeychain.debug.xcconfig */,
+				4766E50E6D343E96EF57EF833D774613 /* SAMKeychain.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SAMKeychain";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				3C4DBC08AB87A716DF40C19A80BA7E95 /* Pods */,
+				0C0C2151BA0DB25426E07F5166CED338 /* Products */,
+				1E6A688425A5DD7F5C698AE24CE4BF96 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D572235D210267F13C585372A3A793E1 /* Pods-GSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				AFE0E64D44CE993FAAEE63F7B2CC94C0 /* Pods-GSNetworking.modulemap */,
+				6E91CB5BBB57861ADAF6850064850E02 /* Pods-GSNetworking-acknowledgements.markdown */,
+				85B6AB46D5D0691113469C7550F8181E /* Pods-GSNetworking-acknowledgements.plist */,
+				E0A767F11227DF38C587B16F336E9D8D /* Pods-GSNetworking-dummy.m */,
+				49CFED21CC8D054BCE4D7995281010A0 /* Pods-GSNetworking-frameworks.sh */,
+				8EA21D7AAC0C6A3173C2189FA99623CE /* Pods-GSNetworking-Info.plist */,
+				92304FB88ED00D313982EF00B334ABF1 /* Pods-GSNetworking-umbrella.h */,
+				278518DFAA0BA9CD80497362DB06278B /* Pods-GSNetworking.debug.xcconfig */,
+				635D7D3D52E0D3C3099BBE8822F1958A /* Pods-GSNetworking.release.xcconfig */,
+			);
+			name = "Pods-GSNetworking";
+			path = "Target Support Files/Pods-GSNetworking";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6AAF251E3E53FF51E91A64B64EC1DF34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D77E8AB01B640A1D8F37832F7698601 /* SAMKeychain.h in Headers */,
+				6717611C9AB46C1C682B8A4E2E321280 /* SAMKeychain-umbrella.h in Headers */,
+				6E808DEA1A50D9FFA2114215EC4C0D03 /* SAMKeychainQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0C3F9D02106AF6F243DE4982F65BE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE098C364F12F2ED33A88D499D84B1A /* Pods-GSNetworking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C9365C67E88852BAC711A5279598A8 /* Build configuration list for PBXNativeTarget "SAMKeychain" */;
+			buildPhases = (
+				6AAF251E3E53FF51E91A64B64EC1DF34 /* Headers */,
+				D5D808901272C4FEF70B9A5C529200C0 /* Sources */,
+				D8B11CD2AC1DFAC52966DAB3A67C8E9F /* Frameworks */,
+				A967557AC96E5FCBA0733CFE8539A963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAMKeychain;
+			productName = SAMKeychain;
+			productReference = 612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */;
+			productType = "com.apple.product-type.framework";
+		};
+		94A7645C47EAAF155853DDDD1F1942B9 /* Pods-GSNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE786660C2BB55AA8A50BD4A1659DEB0 /* Build configuration list for PBXNativeTarget "Pods-GSNetworking" */;
+			buildPhases = (
+				6E0C3F9D02106AF6F243DE4982F65BE6 /* Headers */,
+				30F1467F88F6C96E273932C3C4D55205 /* Sources */,
+				2CCAA880B5078D161A9D56466ADDB237 /* Frameworks */,
+				E14BBB06BC9CC9BC9781CC70267EF490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E352CAE5282E95D355617B7F253E3041 /* PBXTargetDependency */,
+			);
+			name = "Pods-GSNetworking";
+			productName = Pods_GSNetworking;
+			productReference = CCB29E5ECD970BC772567ECEE315C27B /* Pods-GSNetworking */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0C0C2151BA0DB25426E07F5166CED338 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94A7645C47EAAF155853DDDD1F1942B9 /* Pods-GSNetworking */,
+				5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A967557AC96E5FCBA0733CFE8539A963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF653F096566E34B34B04DE559D1E2B2 /* SAMKeychain.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14BBB06BC9CC9BC9781CC70267EF490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30F1467F88F6C96E273932C3C4D55205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B524806835701E8F404B7B4D4DAC39 /* Pods-GSNetworking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D808901272C4FEF70B9A5C529200C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6E5B2870E44EE479483925621946E5 /* SAMKeychain.m in Sources */,
+				8F5A7204ED8F7C84625AE64325FCF204 /* SAMKeychain-dummy.m in Sources */,
+				AFC2FE78B7F0A8E1A44C109C05CF20B6 /* SAMKeychainQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E352CAE5282E95D355617B7F253E3041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAMKeychain;
+			target = 5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */;
+			targetProxy = A428453CF44FC3349FC6506B5CC8B5DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		301B94662065E2A0D5886FA42052F19A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F58C574CABE30AB906E4D2D2C40A05 /* SAMKeychain.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMKeychain/SAMKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SAMKeychain;
+				PRODUCT_NAME = SAMKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A77A24B0EAC4A3595B7AB072A54E6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4766E50E6D343E96EF57EF833D774613 /* SAMKeychain.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMKeychain/SAMKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SAMKeychain;
+				PRODUCT_NAME = SAMKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C7A16C168A451692BDD9ACEBDC5AEDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635D7D3D52E0D3C3099BBE8822F1958A /* Pods-GSNetworking.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GSNetworking/Pods-GSNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GSNetworking/Pods-GSNetworking.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3B36B81BAD4A32A3976A8D41985CBD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278518DFAA0BA9CD80497362DB06278B /* Pods-GSNetworking.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GSNetworking/Pods-GSNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GSNetworking/Pods-GSNetworking.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05C9365C67E88852BAC711A5279598A8 /* Build configuration list for PBXNativeTarget "SAMKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B94662065E2A0D5886FA42052F19A /* Debug */,
+				6A77A24B0EAC4A3595B7AB072A54E6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE786660C2BB55AA8A50BD4A1659DEB0 /* Build configuration list for PBXNativeTarget "Pods-GSNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B36B81BAD4A32A3976A8D41985CBD2 /* Debug */,
+				C7A16C168A451692BDD9ACEBDC5AEDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

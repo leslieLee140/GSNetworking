@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28C942222A779DB000FA90FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C942212A779DB000FA90FE /* AppDelegate.swift */; };
+		28C942242A779DB000FA90FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C942232A779DB000FA90FE /* SceneDelegate.swift */; };
+		28C942262A779DB000FA90FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C942252A779DB000FA90FE /* ViewController.swift */; };
+		28C942292A779DB000FA90FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C942272A779DB000FA90FE /* Main.storyboard */; };
+		28C9422B2A779DB100FA90FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C9422A2A779DB100FA90FE /* Assets.xcassets */; };
+		28C9422E2A779DB100FA90FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C9422C2A779DB100FA90FE /* LaunchScreen.storyboard */; };
+		28C942B72A779FC500FA90FE /* GSNetworkCacheMemoryRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942932A779FC500FA90FE /* GSNetworkCacheMemoryRecord.m */; };
+		28C942B82A779FC500FA90FE /* GSNetworkCacheMemoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942952A779FC500FA90FE /* GSNetworkCacheMemoryManager.m */; };
+		28C942B92A779FC500FA90FE /* GSNetworkCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942962A779FC500FA90FE /* GSNetworkCacheManager.m */; };
+		28C942BA2A779FC500FA90FE /* GSNetworkCacheDiskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C9429A2A779FC500FA90FE /* GSNetworkCacheDiskManager.m */; };
+		28C942BB2A779FC500FA90FE /* NSDictionary+Trans2String.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C9429E2A779FC500FA90FE /* NSDictionary+Trans2String.m */; };
+		28C942BC2A779FC500FA90FE /* NSURLRequest+Parameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C9429F2A779FC500FA90FE /* NSURLRequest+Parameter.m */; };
+		28C942BD2A779FC500FA90FE /* GSNetworkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942A22A779FC500FA90FE /* GSNetworkResponse.m */; };
+		28C942BE2A779FC500FA90FE /* GSNetworkApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942A32A779FC500FA90FE /* GSNetworkApiManager.m */; };
+		28C942BF2A779FC500FA90FE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942A92A779FC500FA90FE /* AFURLResponseSerialization.m */; };
+		28C942C02A779FC500FA90FE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942AA2A779FC500FA90FE /* AFHTTPSessionManager.m */; };
+		28C942C12A779FC500FA90FE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942AC2A779FC500FA90FE /* AFURLSessionManager.m */; };
+		28C942C22A779FC500FA90FE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942AD2A779FC500FA90FE /* AFURLRequestSerialization.m */; };
+		28C942C32A779FC500FA90FE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942AF2A779FC500FA90FE /* AFNetworkReachabilityManager.m */; };
+		28C942C42A779FC500FA90FE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942B02A779FC500FA90FE /* AFSecurityPolicy.m */; };
+		28C942C62A779FC500FA90FE /* GSNetworkApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C942B42A779FC500FA90FE /* GSNetworkApiProxy.m */; };
+		3CB10C32142B6D5948F14040 /* Pods_GSNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5A6EEEA77F60464CEF7B18 /* Pods_GSNetworking.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28C9421E2A779DB000FA90FE /* GSNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C942212A779DB000FA90FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28C942232A779DB000FA90FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28C942252A779DB000FA90FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28C942282A779DB000FA90FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28C9422A2A779DB100FA90FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28C9422D2A779DB100FA90FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28C9422F2A779DB100FA90FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C9428F2A779FC500FA90FE /* GSNetworkApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkApiManager.h; sourceTree = "<group>"; };
+		28C942922A779FC500FA90FE /* GSNetworkCacheMemoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkCacheMemoryManager.h; sourceTree = "<group>"; };
+		28C942932A779FC500FA90FE /* GSNetworkCacheMemoryRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNetworkCacheMemoryRecord.m; sourceTree = "<group>"; };
+		28C942942A779FC500FA90FE /* GSNetworkCacheMemoryRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkCacheMemoryRecord.h; sourceTree = "<group>"; };
+		28C942952A779FC500FA90FE /* GSNetworkCacheMemoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNetworkCacheMemoryManager.m; sourceTree = "<group>"; };
+		28C942962A779FC500FA90FE /* GSNetworkCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNetworkCacheManager.m; sourceTree = "<group>"; };
+		28C942972A779FC500FA90FE /* GSNetworkCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkCacheManager.h; sourceTree = "<group>"; };
+		28C942992A779FC500FA90FE /* GSNetworkCacheDiskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkCacheDiskManager.h; sourceTree = "<group>"; };
+		28C9429A2A779FC500FA90FE /* GSNetworkCacheDiskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNetworkCacheDiskManager.m; sourceTree = "<group>"; };
+		28C9429C2A779FC500FA90FE /* NSDictionary+Trans2String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Trans2String.h"; sourceTree = "<group>"; };
+		28C9429D2A779FC500FA90FE /* NSURLRequest+Parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Parameter.h"; sourceTree = "<group>"; };
+		28C9429E2A779FC500FA90FE /* NSDictionary+Trans2String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Trans2String.m"; sourceTree = "<group>"; };
+		28C9429F2A779FC500FA90FE /* NSURLRequest+Parameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Parameter.m"; sourceTree = "<group>"; };
+		28C942A02A779FC500FA90FE /* GSNetworkDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkDefines.h; sourceTree = "<group>"; };
+		28C942A12A779FC500FA90FE /* GSNetworkApiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkApiProxy.h; sourceTree = "<group>"; };
+		28C942A22A779FC500FA90FE /* GSNetworkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNetworkResponse.m; sourceTree = "<group>"; };
+		28C942A32A779FC500FA90FE /* GSNetworkApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNetworkApiManager.m; sourceTree = "<group>"; };
+		28C942A52A779FC500FA90FE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		28C942A62A779FC500FA90FE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		28C942A72A779FC500FA90FE /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		28C942A82A779FC500FA90FE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		28C942A92A779FC500FA90FE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		28C942AA2A779FC500FA90FE /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		28C942AB2A779FC500FA90FE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		28C942AC2A779FC500FA90FE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		28C942AD2A779FC500FA90FE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		28C942AE2A779FC500FA90FE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		28C942AF2A779FC500FA90FE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		28C942B02A779FC500FA90FE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		28C942B12A779FC500FA90FE /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		28C942B22A779FC500FA90FE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		28C942B42A779FC500FA90FE /* GSNetworkApiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNetworkApiProxy.m; sourceTree = "<group>"; };
+		28C942B52A779FC500FA90FE /* GSNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworking.h; sourceTree = "<group>"; };
+		28C942B62A779FC500FA90FE /* GSNetworkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNetworkResponse.h; sourceTree = "<group>"; };
+		9F5A6EEEA77F60464CEF7B18 /* Pods_GSNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C65C3C9713AE5C77EEC2D41E /* Pods-GSNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSNetworking.debug.xcconfig"; path = "Target Support Files/Pods-GSNetworking/Pods-GSNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		E3F563EE4D9564871277A2D6 /* Pods-GSNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSNetworking.release.xcconfig"; path = "Target Support Files/Pods-GSNetworking/Pods-GSNetworking.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28C9421B2A779DB000FA90FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB10C32142B6D5948F14040 /* Pods_GSNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C942152A779DB000FA90FE = {
+			isa = PBXGroup;
+			children = (
+				28C942202A779DB000FA90FE /* GSNetworking */,
+				28C9421F2A779DB000FA90FE /* Products */,
+				CF662E9F49D9F750D1116156 /* Pods */,
+				AAE22C43417A11C1760B64AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28C9421F2A779DB000FA90FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28C9421E2A779DB000FA90FE /* GSNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28C942202A779DB000FA90FE /* GSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				28C9428E2A779FC500FA90FE /* GSNetworking */,
+				28C942212A779DB000FA90FE /* AppDelegate.swift */,
+				28C942232A779DB000FA90FE /* SceneDelegate.swift */,
+				28C942252A779DB000FA90FE /* ViewController.swift */,
+				28C942272A779DB000FA90FE /* Main.storyboard */,
+				28C9422A2A779DB100FA90FE /* Assets.xcassets */,
+				28C9422C2A779DB100FA90FE /* LaunchScreen.storyboard */,
+				28C9422F2A779DB100FA90FE /* Info.plist */,
+			);
+			path = GSNetworking;
+			sourceTree = "<group>";
+		};
+		28C9428E2A779FC500FA90FE /* GSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				28C9428F2A779FC500FA90FE /* GSNetworkApiManager.h */,
+				28C942902A779FC500FA90FE /* Cache */,
+				28C9429B2A779FC500FA90FE /* Category */,
+				28C942A02A779FC500FA90FE /* GSNetworkDefines.h */,
+				28C942A12A779FC500FA90FE /* GSNetworkApiProxy.h */,
+				28C942A22A779FC500FA90FE /* GSNetworkResponse.m */,
+				28C942A32A779FC500FA90FE /* GSNetworkApiManager.m */,
+				28C942A42A779FC500FA90FE /* AFNetworking */,
+				28C942B42A779FC500FA90FE /* GSNetworkApiProxy.m */,
+				28C942B52A779FC500FA90FE /* GSNetworking.h */,
+				28C942B62A779FC500FA90FE /* GSNetworkResponse.h */,
+			);
+			path = GSNetworking;
+			sourceTree = "<group>";
+		};
+		28C942902A779FC500FA90FE /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				28C942912A779FC500FA90FE /* Memory */,
+				28C942962A779FC500FA90FE /* GSNetworkCacheManager.m */,
+				28C942972A779FC500FA90FE /* GSNetworkCacheManager.h */,
+				28C942982A779FC500FA90FE /* Disk */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		28C942912A779FC500FA90FE /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				28C942922A779FC500FA90FE /* GSNetworkCacheMemoryManager.h */,
+				28C942932A779FC500FA90FE /* GSNetworkCacheMemoryRecord.m */,
+				28C942942A779FC500FA90FE /* GSNetworkCacheMemoryRecord.h */,
+				28C942952A779FC500FA90FE /* GSNetworkCacheMemoryManager.m */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		28C942982A779FC500FA90FE /* Disk */ = {
+			isa = PBXGroup;
+			children = (
+				28C942992A779FC500FA90FE /* GSNetworkCacheDiskManager.h */,
+				28C9429A2A779FC500FA90FE /* GSNetworkCacheDiskManager.m */,
+			);
+			path = Disk;
+			sourceTree = "<group>";
+		};
+		28C9429B2A779FC500FA90FE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				28C9429C2A779FC500FA90FE /* NSDictionary+Trans2String.h */,
+				28C9429D2A779FC500FA90FE /* NSURLRequest+Parameter.h */,
+				28C9429E2A779FC500FA90FE /* NSDictionary+Trans2String.m */,
+				28C9429F2A779FC500FA90FE /* NSURLRequest+Parameter.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		28C942A42A779FC500FA90FE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				28C942A52A779FC500FA90FE /* AFSecurityPolicy.h */,
+				28C942A62A779FC500FA90FE /* AFNetworkReachabilityManager.h */,
+				28C942A72A779FC500FA90FE /* AFURLSessionManager.h */,
+				28C942A82A779FC500FA90FE /* AFURLRequestSerialization.h */,
+				28C942A92A779FC500FA90FE /* AFURLResponseSerialization.m */,
+				28C942AA2A779FC500FA90FE /* AFHTTPSessionManager.m */,
+				28C942AB2A779FC500FA90FE /* AFURLResponseSerialization.h */,
+				28C942AC2A779FC500FA90FE /* AFURLSessionManager.m */,
+				28C942AD2A779FC500FA90FE /* AFURLRequestSerialization.m */,
+				28C942AE2A779FC500FA90FE /* AFNetworking.h */,
+				28C942AF2A779FC500FA90FE /* AFNetworkReachabilityManager.m */,
+				28C942B02A779FC500FA90FE /* AFSecurityPolicy.m */,
+				28C942B12A779FC500FA90FE /* AFCompatibilityMacros.h */,
+				28C942B22A779FC500FA90FE /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		AAE22C43417A11C1760B64AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F5A6EEEA77F60464CEF7B18 /* Pods_GSNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF662E9F49D9F750D1116156 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C65C3C9713AE5C77EEC2D41E /* Pods-GSNetworking.debug.xcconfig */,
+				E3F563EE4D9564871277A2D6 /* Pods-GSNetworking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28C9421D2A779DB000FA90FE /* GSNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C942322A779DB100FA90FE /* Build configuration list for PBXNativeTarget "GSNetworking" */;
+			buildPhases = (
+				1EE924451A1946280335A9DE /* [CP] Check Pods Manifest.lock */,
+				28C9421A2A779DB000FA90FE /* Sources */,
+				28C9421B2A779DB000FA90FE /* Frameworks */,
+				28C9421C2A779DB000FA90FE /* Resources */,
+				64B36A8AF92052CD92985900 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSNetworking;
+			productName = GSNetworking;
+			productReference = 28C9421E2A779DB000FA90FE /* GSNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28C942162A779DB000FA90FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					28C9421D2A779DB000FA90FE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 28C942192A779DB000FA90FE /* Build configuration list for PBXProject "GSNetworking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28C942152A779DB000FA90FE;
+			productRefGroup = 28C9421F2A779DB000FA90FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28C9421D2A779DB000FA90FE /* GSNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28C9421C2A779DB000FA90FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C9422E2A779DB100FA90FE /* LaunchScreen.storyboard in Resources */,
+				28C9422B2A779DB100FA90FE /* Assets.xcassets in Resources */,
+				28C942292A779DB000FA90FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EE924451A1946280335A9DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GSNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B36A8AF92052CD92985900 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSNetworking/Pods-GSNetworking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSNetworking/Pods-GSNetworking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GSNetworking/Pods-GSNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C9421A2A779DB000FA90FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C942262A779DB000FA90FE /* ViewController.swift in Sources */,
+				28C942BE2A779FC500FA90FE /* GSNetworkApiManager.m in Sources */,
+				28C942BB2A779FC500FA90FE /* NSDictionary+Trans2String.m in Sources */,
+				28C942C12A779FC500FA90FE /* AFURLSessionManager.m in Sources */,
+				28C942BA2A779FC500FA90FE /* GSNetworkCacheDiskManager.m in Sources */,
+				28C942222A779DB000FA90FE /* AppDelegate.swift in Sources */,
+				28C942C32A779FC500FA90FE /* AFNetworkReachabilityManager.m in Sources */,
+				28C942242A779DB000FA90FE /* SceneDelegate.swift in Sources */,
+				28C942B82A779FC500FA90FE /* GSNetworkCacheMemoryManager.m in Sources */,
+				28C942C42A779FC500FA90FE /* AFSecurityPolicy.m in Sources */,
+				28C942B72A779FC500FA90FE /* GSNetworkCacheMemoryRecord.m in Sources */,
+				28C942BD2A779FC500FA90FE /* GSNetworkResponse.m in Sources */,
+				28C942B92A779FC500FA90FE /* GSNetworkCacheManager.m in Sources */,
+				28C942BF2A779FC500FA90FE /* AFURLResponseSerialization.m in Sources */,
+				28C942C22A779FC500FA90FE /* AFURLRequestSerialization.m in Sources */,
+				28C942BC2A779FC500FA90FE /* NSURLRequest+Parameter.m in Sources */,
+				28C942C02A779FC500FA90FE /* AFHTTPSessionManager.m in Sources */,
+				28C942C62A779FC500FA90FE /* GSNetworkApiProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28C942272A779DB000FA90FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C942282A779DB000FA90FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28C9422C2A779DB100FA90FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C9422D2A779DB100FA90FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28C942302A779DB100FA90FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28C942312A779DB100FA90FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28C942332A779DB100FA90FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65C3C9713AE5C77EEC2D41E /* Pods-GSNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V8DDU6RFC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GSNetworking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GameSir.UX.GSNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28C942342A779DB100FA90FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F563EE4D9564871277A2D6 /* Pods-GSNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V8DDU6RFC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GSNetworking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GameSir.UX.GSNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C942192A779DB000FA90FE /* Build configuration list for PBXProject "GSNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C942302A779DB100FA90FE /* Debug */,
+				28C942312A779DB100FA90FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C942322A779DB100FA90FE /* Build configuration list for PBXNativeTarget "GSNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C942332A779DB100FA90FE /* Debug */,
+				28C942342A779DB100FA90FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28C942162A779DB000FA90FE /* Project object */;
+}
